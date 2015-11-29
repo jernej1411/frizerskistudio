@@ -1,0 +1,253 @@
+/* andreas07 - an open source xhtml/css website layout by Andreas Viklund - http://andreasviklund.com . Free to use for any purpose as long as the proper credits are given for the original design work.
+
+Version: 1.1, November 28, 2005 */
+/**************** Page and tag styles ****************/
+body 
+{
+ margin: 0;
+ padding: 0;
+ color: #303030;
+ background-image: url(img/bodybg.gif);
+ background-color: #fafafa;
+ background-position: top left;
+ background-repeat: repeat-y;
+ font-size: 76%;
+ font-family: Verdana, Tahoma, sans-serif;
+}
+
+ul 
+{
+ list-style: circle;
+ margin-top: 15px;
+ margin-right: 0;
+ margin-bottom: 20px;
+ margin-left: 0;
+ font-size: 0.9em;
+}
+
+li 
+{
+ margin-top: 0;
+ margin-right: 0;
+ margin-bottom: 8px;
+ margin-left: 25px;
+}
+
+a 
+{
+ color: #d85d5d;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+a:hover 
+{
+ color: #505050;
+ text-decoration: underline;
+}
+
+img 
+{
+ float: left;
+ margin-top: 0;
+ margin-right: 15px;
+ margin-bottom: 15px;
+ margin-left: 0;
+ padding: 1px;
+ background-color: #ffffff;
+ border-color: #d0d0d0;
+ border-width: 1px;
+ border-style: solid;
+}
+
+a img 
+{
+ border-color: #d85d5d;
+}
+
+a img:hover 
+{
+ background-color: #d85d5d;
+ border-color: #d85d5d;
+}
+
+/**************** Sidebar area styles ****************/
+#sidebar 
+{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 220px;
+ height: 100%;
+ overflow: auto;
+ background-image: url(img/sidebarbg.gif);
+ background-color: #e0e0e0;
+ background-position: top right;
+ background-repeat: repeat-y;
+ text-align: right;
+}
+
+body > #sidebar 
+{
+ position: fixed;
+}
+
+#sidebar h1 
+{
+ margin-top: 20px;
+ margin-right: 18px;
+ margin-bottom: 0;
+ margin-left: 5px;
+ color: #d85d5d;
+ font-size: 1.6em;
+ letter-spacing: -2px;
+ text-align: right;
+}
+
+#sidebar h2, #sidebar h3 
+{
+ margin-top: 0;
+ margin-right: 20px;
+ margin-bottom: 18px;
+ margin-left: 5px;
+ color: #808080;
+ font-size: 1.1em;
+ font-weight: bold;
+ letter-spacing: -1px;
+ text-align: right;
+}
+
+#sidebar h3 
+{
+ margin-top: 20px;
+ margin-right: 18px;
+ margin-bottom: 4px;
+ margin-left: 5px;
+ color: #606060;
+}
+
+#sidebar p 
+{
+ margin-top: 0;
+ margin-right: 20px;
+ margin-bottom: 18px;
+ margin-left: 5px;
+ color: #606060;
+ font-size: 0.8em;
+}
+
+#sidebar a 
+{
+ color: #808080;
+}
+
+/**************** Navigation menu styles ****************/
+#menu a 
+{
+ display: block;
+ width: 202px;
+ padding-top: 5px;
+ padding-right: 18px;
+ padding-bottom: 5px;
+ padding-left: 0;
+ color: #606060;
+ background-image: url(img/sidebarbg.gif);
+ background-color: #e0e0e0;
+ background-position: top right;
+ background-repeat: repeat-y;
+ font-size: 1.8em;
+ font-weight: normal;
+ text-decoration: none;
+ letter-spacing: -2px;
+}
+
+#menu a:hover 
+{
+ color: #303030;
+ background-image: url(img/sidebarbg.gif);
+ background-color: #f0f0f0;
+ background-position: top right;
+ background-repeat: repeat-y;
+}
+
+#menu a.active 
+{
+ padding-top: 5px;
+ padding-right: 18px;
+ padding-bottom: 5px;
+ padding-left: 0;
+ background-color: #fafafa;
+ border-top-color: #c0c0c0;
+ border-top-width: 2px;
+ border-top-style: solid;
+ border-bottom-color: #c0c0c0;
+ border-bottom-width: 2px;
+ border-bottom-style: solid;
+}
+
+#menu a.active:hover 
+{
+ color: #505050;
+ background-color: #fafafa;
+}
+
+/**************** Content area styles ****************/
+#content 
+{
+ width: 520px;
+ margin-top: 0;
+ margin-right: 0;
+ margin-bottom: 0;
+ margin-left: 240px;
+ padding-top: 20px;
+ padding-right: 0;
+ padding-bottom: 20px;
+ padding-left: 0;
+ background-color: #fafafa;
+}
+
+#content p 
+{
+ margin-top: 0;
+ margin-right: 0;
+ margin-bottom: 20px;
+ margin-left: 0;
+ line-height: 1.5em;
+}
+
+#content h1 
+{
+ margin: 0;
+ color: #d85d5d;
+ font-size: 4em;
+ letter-spacing: -5px;
+ text-align: center;
+}
+
+#content h2 
+{
+ margin: 0;
+ color: #808080;
+ font-weight: normal;
+ font-size: 2.5em;
+ letter-spacing: -2px;
+ text-align: center;
+}
+
+#content h3 
+{
+ clear: both;
+ margin-top: 30px;
+ margin-right: 0;
+ margin-bottom: 10px;
+ margin-left: 0;
+ color: #d85d5d;
+ font-weight: normal;
+ font-size: 2em;
+ letter-spacing: -2px;
+}
+
+#bottom 
+{
+   vertical-align: bottom;
+}
