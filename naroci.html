@@ -49,19 +49,57 @@ Email:
 <h2>Naroči se</h2>
     <br>
 <form action="test.js">
-<input type="text" name="firstlastname" value="Ime in priimek">
+<input type="text" name="firstlastname" value="Ime in priimek" onfocus="if(this.value == 'Ime in priimek') this.value = '';"
+	   onblur="if(this.value=='') this.value='Ime in priimek';">
     <br>
-<input type="text" name="pnumber" value="Tel. številka">
+<input type="text" name="pnumber" value="Tel. številka" onfocus="if(this.value == 'Tel. številka') this.value = '';"
+	   onblur="if(this.value=='') this.value='Tel. številka';">
     <br>
-<input type="text" name="period" value="Termin">
+<input type="text" name="period" value="Termin" onfocus="if(this.value == 'Termin') this.value = '';"
+	   onblur="if(this.value=='') this.value='Termin';">
     <br>
 <textarea name="message" rows="10" cols="30">
-Ostalo želje glede pričeske ipd.
-</textarea><br>
+	Sporočilo...
+</textarea>
+	<br>
 <input type="checkbox" name="accept"> Strinjam se, da je Mirko najboljši frizer <br>
 <input type="submit" value="Pošlji">
 </form>
 
+	<table align="right">
+   <tr>
+      <th>Dan</th>
+      <th>Delovne ure</th>
+   </tr>
+   <tr>
+      <td>Ponedeljek</td>
+      <td>8.00-16.00</td>
+   </tr>
+   <tr>
+      <td>Torek</td>
+      <td>10.00-18.00</td>
+   </tr>
+   <tr>
+      <td>Sreda</td>
+      <td>8.00-16.00</td>
+   </tr>
+   <tr>
+      <td>Četrtek</td>
+      <td>8.00-16.00</td>
+   </tr>
+   <tr>
+      <td>Petek</td>
+      <td>12.00-20.00</td>
+   </tr>
+   <tr>
+      <td>Sobota</td>
+      <td>8.00-16.00</td>
+   </tr>
+   <tr>
+      <td>Nedelja</td>
+      <td>8.00-12.00</td>
+   </tr>
+</table>
 <h4>Informacije o strani</h4>
 <p>&copy; 2015-2016 Jernej. Design by <a href="http://andreasviklund.com">Andreas Viklund</a>.</p>
 </div>
